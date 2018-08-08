@@ -13,6 +13,12 @@
 
 int main()
 {
+	FILE *p_file;
+	///home/mcdaale/Documents/workspace/learnc/debug.txt
+	p_file = fopen("/home/jim/eclipse-workspace/learnC/TestingC/debug.txt", "a+");
+	fprintsf(p_file, "test print");
+	fputs("test for fputs", p_file);
+	fclose(p_file);
 	int index = 0;
 
 	double midpoint_x = 0;
